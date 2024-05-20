@@ -1,12 +1,13 @@
 <script setup>
 import SidebarNav from '@/Components/SidebarNav.vue'
+import Footer from '@/Components/Footer.vue'
+import AppLayout from '@/Layouts/AppLayout.vue'
 </script>
 
 <template>
-    <div>
-        <SidebarNav />
-        <div class="flex flex-col items-center justify-center h-screen">
-            <h1 class="text-4xl font-bold">Robotica</h1>
+    <AppLayout>
+        <div class="h-screen">
+
         </div>
-    </div>
+    </AppLayout>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-gray-800">
+    <footer class="bg-gray-800 mt-10">
       <div class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
         <div class="flex justify-center space-x-6 md:order-2">
           <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-white">

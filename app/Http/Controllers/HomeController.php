@@ -32,5 +32,10 @@ class HomeController extends Controller
     {
         return Inertia::render('Robotics');
     }
+
+    public function documentation()
+    {
+        return Inertia::render('Documentation');
+    }
 }
 

@@ -4,13 +4,14 @@ import HeroSection from "../Components/HeroSection.vue";
 import TeamSection from "../Components/TeamSection.vue";
 import Footer from "../Components/Footer.vue";
 
+
 </script>
 
 <template>
     <div class="w-full h-screen">
         <SidebarNav />
         <div>
-            <HeroSection />
+            <HeroSection title='Engenharia de Software' subtitle="Entenda de uma vez por todas os conceitos básicos de C Ansi, Lógica de Programacão, Bibliotecas Básicas, Declaração de váriaves, entre outros." />
         </div>
         <div class="bg-white py-24 sm:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">

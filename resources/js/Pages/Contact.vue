@@ -1,5 +1,5 @@
 <template>
-    <SidebarNav />
+    <AppLayout>
     <div>
         <div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
           <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
@@ -68,13 +68,14 @@
           </form>
         </div>
     </div>
+  </AppLayout>
   </template>
   
   <script setup>
   import { ref } from 'vue'
   import { ChevronDownIcon } from '@heroicons/vue/20/solid'
   import { Switch, SwitchGroup, SwitchLabel } from '@headlessui/vue'
-  import SidebarNav from '@/Components/SidebarNav.vue'
+  import AppLayout from '@/Layouts/AppLayout.vue'
   
   const agreed = ref(false)
   </script>
