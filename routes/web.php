@@ -18,5 +18,10 @@ Route::get('documentacao', [HomeController::class, 'documentation'])->name('docu
 
 // Aulas
 
-Route::get('/logic', [CansiController::class, 'logic'])->name('logic');
+Route::get('/logica-de-programacao', [CansiController::class, 'logic'])->name('logic');
+Route::get('/linguagem-de-programacao-c', [CansiController::class, 'cLanguage'])->name('c.language');
+Route::get('/bibliotecas-basicas-c', [CansiController::class, 'cLibrary'])->name('c.library');
+Route::get('/declaracao-de-variaveis', [CansiController::class, 'cVariable'])->name('c.variable');
+
+
 

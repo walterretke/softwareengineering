@@ -11,7 +11,7 @@ import {
 <template>
     <AppLayout>
         <HeroSection
-            title="C Ansi"
+            title="Bibliotecas Básicas em C"
             subtitle="Aprenda tudo com o melhor, Walter"
         />
         <div class="bg-white px-6 py-32 lg:px-8 w-[1000px] m-auto">
@@ -22,7 +22,7 @@ import {
                 <h1
                     class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
                 >
-                    Lógica de Programação
+                  Bibliotecas Básicas em C
                 </h1>
                 <p class="mt-6 text-xl leading-8">
                     A lógica de programação é um conjunto de princípios e

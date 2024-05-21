@@ -11,5 +11,20 @@ class CansiController extends Controller
     {
         return Inertia::render('Logic');
     }
+
+    public function cLanguage()
+    {
+        return Inertia::render('CLanguage');
+    }
+
+    public function cLibrary()
+    {
+        return Inertia::render('CLibrary');
+    }
+
+    public function cVariable()
+    {
+        return Inertia::render('CVariable');
+    }
 }
 

@@ -4,29 +4,91 @@ import AppLayout from '@/Layouts/AppLayout.vue';
 import HeroSection from '@/Components/HeroSection.vue';
 import Footer from '@/Components/Footer.vue';
 import { Link as InertiaLink } from '@inertiajs/inertia-vue3'
+import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/vue/24/outline'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 
-const contents = ref([
-    { id: 1, title: 'Lógica de Programação', description: 'Aqui você vai aprender o básico da linguagem C Ansi', link: 'logic'},
-    { id: 2, title: 'Linguagem de Programação C', description: 'Aqui você vai aprender sobre variáveis em C Ansi', link: 'variables'},
-    { id: 3, title: 'Bibliotecas básicas em C', description: 'Aqui você vai aprender sobre estruturas de controle em C Ansi', link: 'libraries'},
-    { id: 4, title: 'Declaração de variáveis', description: 'Aqui você vai aprender sobre estruturas de controle em C Ansi', link: 'variables-declaration'},
-    { id: 5, title: 'Comandos de Entrada e Saída', description: 'Aqui você vai aprender sobre estruturas de controle em C Ansi', link: 'io-commands'},
-    { id: 6, title: 'Condicional', description: 'Aqui você vai aprender sobre estruturas de controle em C Ansi', link: 'conditional'},
-    { id: 7, title: 'Laços de Repetição', description: 'Aqui você vai aprender sobre estruturas de controle em C Ansi', link: 'loops'},
-])
+const faqs = [
+  {
+    id: 1,
+    question: "Aula 1 - Introdução a lógica de programação",
+    answer:
+      "A lógica de programação é a base para a criação de algoritmos e soluções eficientes em qualquer linguagem de programação. Compreender os princípios fundamentais, como estruturas condicionais, loops e variáveis, é essencial para desenvolver programas funcionais e resolver problemas complexos. Mas você sabe qual é o segredo para otimizar ainda mais seu código?",
+    link: "logic",
+  },
+  {
+    id: 2,
+    question: "Aula 2 - Linguagem de programação C",
+    answer:
+        'Aqui você vai aprender sobre variáveis em C Ansi',
+    link: "c.language",
+  },
+  {
+    id: 3,
+    question: "Aula 3 - Bibliotecas básicas em C",
+    answer:
+        'Aqui você vai aprender sobre estruturas de controle em C Ansi',
+    link: "c.library",
+  },
+  {
+    id: 4,
+    question: "Aula 4 - Funções em C",
+    answer: 'Aqui você vai aprender sobre funções em C Ansi',
+    link: 'c.variable',
+  }
+];
 </script>
 
 <template>
     <AppLayout>
-        <div>
-            <HeroSection title="Get started learn C Ansi" subtitle="Tudo o que você precisa para entender o básico da linguagem mais famosa do mundo!" />
-            <div class="flex">
-                <div class="grid grid-cols-2 gap-4 m-auto">
-                    <div class="bg-gray-100 text-justify rounded-md p-5" v-for="(content, index) in contents" :key="content.id">
-                        <InertiaLink class="bg-gray-800 rounded-md mx-2 px-2 py-1 text-white bold text-xs">{{ `Aula ${index + 1}` }}</InertiaLink>
-                        <h1 class="text-3xl text-gray-800 max-w-content p-2 mx- mt-2">{{ content.title }}</h1>
-                        <p class="p-2 mt-2">{{ content.description }}</p>
-                    </div>
+    <HeroSection :menu="TRUE" title="Aprenda C Ansi" subtitle="Nesta seção você ira encontrar tudo o que precisa para entender o básico de Lógica de Programação e Linguagem de Programação C" />
+        <div class="bg-white h-screen">
+            <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+                <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
+                    <h2
+                        class="text-2xl font-bold leading-10 tracking-tight text-gray-900"
+                    >
+                        Aprenda C Ansi!
+                    </h2>
+                    <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
+                        <Disclosure
+                            as="div"
+                            v-for="(faq) in faqs"
+                            :key="faq.id"
+                            class="pt-6 max-h-content"
+                            v-slot="{ open }"
+                        >
+                            <dt>
+                                <DisclosureButton
+                                    class="flex w-full items-start justify-between text-left text-gray-900"
+                                >
+                                    <span
+                                        class="text-base font-semibold leading-7"
+                                        >{{ faq.question }}</span
+                                    >
+                                    <span class="ml-6 flex items-center">
+                                        <PlusSmallIcon
+                                            v-if="!open"
+                                            class="h-6 w-6"
+                                            aria-hidden="true"
+                                        />
+                                        <MinusSmallIcon
+                                            v-else
+                                            class="h-6 w-6"
+                                            aria-hidden="true"
+                                        />
+                                    </span>
+                                </DisclosureButton>
+                            </dt>
+                            <DisclosurePanel as="dd" class="mt-2 pr-12">
+                                <p class="text-base leading-7 text-gray-600">
+                                    {{ faq.answer }}
+                                </p>
+                                <div class="mt-4">
+                                    <InertiaLink :href="route(faq.link)" class="text-gray-800 underline">Ver aula</InertiaLink> 
+                                </div>
+                            </DisclosurePanel>
+                        </Disclosure>
+                    </dl>
                 </div>
             </div>
         </div>

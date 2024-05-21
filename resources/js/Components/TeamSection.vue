@@ -79,5 +79,11 @@ const people = [
         linkedinUrl:
             "https://br.linkedin.com/in/matheus-tacto-zapella-7703292b7",
     },
+    {
+        name:"Igor Sebastian",
+        role:"20 anos, estudante de Engenharia de Software na Católica.",
+        imageUrl:"/images/Igor.jpeg",
+        linkedinUrl:"https://www.linkedin.com/in/igor-sebastian-1b1b3b1b3/",
+    }
 ];
 </script>
