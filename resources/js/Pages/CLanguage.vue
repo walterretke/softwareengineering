@@ -6,197 +6,310 @@ import {
     CheckCircleIcon,
     InformationCircleIcon,
 } from "@heroicons/vue/20/solid";
+import { Link as InertiaLink } from "@inertiajs/inertia-vue3";
 </script>
 
 <template>
     <AppLayout>
         <HeroSection
             title="Linguagem de Programação C"
-            subtitle="Aprenda tudo com o melhor, Walter"
+            subtitle="A linguagem de programação C ANSI é fundamental para muitos sistemas e aplicações modernas. Criada em 1972 por Dennis Ritchie, C é conhecida por sua eficiência e portabilidade. Compreender conceitos como ponteiros, alocação de memória e gerenciamento de recursos é essencial para desenvolver software robusto. Mas você sabe qual é o segredo para escrever código C ANSI eficiente e seguro?"
         />
-        <div class="bg-white px-6 py-32 lg:px-8 w-[1000px] m-auto">
+        <div class="bg-white px-6 py-32 lg:px-8 mx-auto max-w-7xl">
             <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
                 <p class="text-base font-semibold leading-7 text-indigo-600">
-                    C Ansi
+                    Linguagem de Programação C
                 </p>
                 <h1
                     class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
                 >
-                    Linguagem de Programação C
+                    Um breve histórico
                 </h1>
-                <p class="mt-6 text-xl leading-8">
-                    A lógica de programação é um conjunto de princípios e
-                    técnicas fundamentais que permitem a construção de
-                    algoritmos eficientes para resolver problemas e executar
-                    tarefas em computadores. Envolve o entendimento e aplicação
-                    de estruturas condicionais, loops, e variáveis para
-                    controlar o fluxo de um programa. A lógica de programação é
-                    essencial para a criação de software, pois facilita a
-                    organização e otimização do código.
-                </p>
-                <div class="mt-10 max-w-2xl">
-                    <p>
-                        A lógica de programação é composta por elementos
-                        fundamentais como operadores lógicos e aritméticos, que
-                        permitem a manipulação de dados e a tomada de decisões
-                        dentro de um programa. Estruturas condicionais, como
-                        "if", "else if" e "else", são utilizadas para executar
-                        blocos de código com base em condições específicas. Os
-                        loops, como "for", "while" e "do while", são usados para
-                        repetir a execução de um bloco de código enquanto uma
-                        condição for verdadeira, facilitando tarefas
-                        repetitivas. As variáveis são contêineres que armazenam
-                        dados temporários para serem utilizados e manipulados ao
-                        longo da execução do programa. Além disso, funções e
-                        procedimentos são componentes que ajudam a modularizar e
-                        organizar o código, tornando-o mais legível e
-                        reutilizável. Compreender e aplicar esses conceitos
-                        permite criar programas eficientes e resolver problemas
-                        de maneira sistemática e lógica.
-                    </p>
-                    <ul
-                        role="list"
-                        class="mt-8 max-w-xl space-y-8 text-gray-600"
-                    >
-                        <li class="flex gap-x-3">
-                            <CheckCircleIcon
-                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
-                                aria-hidden="true"
-                            />
-                            <span
-                                ><strong class="font-semibold text-gray-900"
-                                    >Data types.</strong
-                                >
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Maiores impedit perferendis
-                                suscipit eaque, iste dolor cupiditate blanditiis
-                                ratione.</span
-                            >
-                        </li>
-                        <li class="flex gap-x-3">
-                            <CheckCircleIcon
-                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
-                                aria-hidden="true"
-                            />
-                            <span
-                                ><strong class="font-semibold text-gray-900"
-                                    >Loops.</strong
-                                >
-                                Anim aute id magna aliqua ad ad non deserunt
-                                sunt. Qui irure qui lorem cupidatat
-                                commodo.</span
-                            >
-                        </li>
-                        <li class="flex gap-x-3">
-                            <CheckCircleIcon
-                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
-                                aria-hidden="true"
-                            />
-                            <span
-                                ><strong class="font-semibold text-gray-900"
-                                    >Events.</strong
-                                >
-                                Ac tincidunt sapien vehicula erat auctor
-                                pellentesque rhoncus. Et magna sit morbi
-                                lobortis.</span
-                            >
-                        </li>
-                    </ul>
-                    <p class="mt-8">
-                        Et vitae blandit facilisi magna lacus commodo. Vitae
-                        sapien duis odio id et. Id blandit molestie auctor
-                        fermentum dignissim. Lacus diam tincidunt ac cursus in
-                        vel. Mauris varius vulputate et ultrices hac adipiscing
-                        egestas. Iaculis convallis ac tempor et ut. Ac lorem vel
-                        integer orci.
-                    </p>
-                    <h2
-                        class="mt-16 text-2xl font-bold tracking-tight text-gray-900"
-                    >
-                        From beginner to expert in 3 hours
-                    </h2>
-                    <p class="mt-6">
-                        Id orci tellus laoreet id ac. Dolor, aenean leo, ac
-                        etiam consequat in. Convallis arcu ipsum urna nibh.
-                        Pharetra, euismod vitae interdum mauris enim, consequat
-                        vulputate nibh. Maecenas pellentesque id sed tellus
-                        mauris, ultrices mauris. Tincidunt enim cursus ridiculus
-                        mi. Pellentesque nam sed nullam sed diam turpis ipsum eu
-                        a sed convallis diam.
-                    </p>
-                    <figure class="mt-10 border-l border-indigo-600 pl-9">
-                        <blockquote class="font-semibold text-gray-900">
-                            <p>
-                                “Vel ultricies morbi odio facilisi ultrices
-                                accumsan donec lacus purus. Lectus nibh
-                                ullamcorper ac dictum justo in euismod. Risus
-                                aenean ut elit massa. In amet aliquet eget cras.
-                                Sem volutpat enim tristique.”
-                            </p>
-                        </blockquote>
-                        <figcaption class="mt-6 flex gap-x-4">
-                            <img
-                                class="h-6 w-6 flex-none rounded-full bg-gray-50"
-                                src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                alt=""
-                            />
-                            <div class="text-sm leading-6">
-                                <strong class="font-semibold text-gray-900"
-                                    >Maria Hill</strong
-                                >
-                                – Marketing Manager
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <p class="mt-10">
-                        Faucibus commodo massa rhoncus, volutpat. Dignissim sed
-                        eget risus enim. Mattis mauris semper sed amet vitae sed
-                        turpis id. Id dolor praesent donec est. Odio penatibus
-                        risus viverra tellus varius sit neque erat velit.
-                    </p>
-                </div>
-                <figure class="mt-16">
+                <div class="flex flex-col md:flex-row items-center gap-5">
                     <img
-                        class="aspect-video rounded-xl bg-gray-50 object-cover"
-                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
+                        class="w-full md:w-1/2 mt-6 rounded-lg shadow-lg"
+                        src="https://media1.tenor.com/m/aYOjZFN5MBwAAAAC/zzzzzzz.gif"
                         alt=""
                     />
-                    <figcaption
-                        class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500"
-                    >
-                        <InformationCircleIcon
-                            class="mt-0.5 h-5 w-5 flex-none text-gray-300"
-                            aria-hidden="true"
-                        />
-                        Faucibus commodo massa rhoncus, volutpat.
-                    </figcaption>
-                </figure>
-                <div class="mt-16 max-w-2xl">
-                    <h2 class="text-2xl font-bold tracking-tight text-gray-900">
-                        Everything you need to get up and running
-                    </h2>
-                    <p class="mt-6">
-                        Purus morbi dignissim senectus mattis adipiscing. Amet,
-                        massa quam varius orci dapibus volutpat cras. In amet eu
-                        ridiculus leo sodales cursus tristique. Tincidunt sed
-                        tempus ut viverra ridiculus non molestie. Gravida quis
-                        fringilla amet eget dui tempor dignissim. Facilisis
-                        auctor venenatis varius nunc, congue erat ac. Cras
-                        fermentum convallis quam.
-                    </p>
-                    <p class="mt-8">
-                        Faucibus commodo massa rhoncus, volutpat. Dignissim sed
-                        eget risus enim. Mattis mauris semper sed amet vitae sed
-                        turpis id. Id dolor praesent donec est. Odio penatibus
-                        risus viverra tellus varius sit neque erat velit.
+                    <p class="italic text-gray-500 text-lg leading-7">
+                        Eu sei, seu sei... História é um pouco chato, mas é
+                        importante 🫠
                     </p>
                 </div>
-                <div class="flex w-full justify-end mt-10">
-                    <button
-                        class="py-2 px-4 bg-gray-800 text-white rounded-md hover:bg-gray-900 hover"
+                <p class="mt-6 text-xl leading-8">
+                    A linguagem C foi criada por Dennis Ritchie em 1972 para
+                    reescrever de forma portável o sistema operacional UNIX, que
+                    antes era escrito em assembly. Sua estrutura e seu nome
+                    provêm de uma linguagem anterior B, que era uma
+                    simplificação da linguagem de programação BCPL, escrita em
+                    1966.
+                </p>
+                <p class="mt-6 leading-8">
+                    Em 1978 foi publicado o livro "The C Programming Language"
+                    por Brian Kernighan e Dennis Ritchie, consagrando a
+                    linguagem no padrão chamado K&R. Durante muitos anos esse
+                    livro foi considerado como a especificação da linguagem.
+                </p>
+                <p class="mt-6 leading-8">
+                    Em 1989 o padrão C foi oficializado pelo ANSI (American
+                    National Standards Institute) através do padrão ANSI
+                    X3.159-1989, conhecido hoje como ANSI C, C89 ou C90. É
+                    provavelmente a versão mais usada da linguagem ainda hoje.
+                </p>
+                <p class="mt-6 leading-8">
+                    Em 1999 a ISO (International Standards Organization)
+                    publicou um novo padrão da linguagem chamado ISO/IEC
+                    9899:1999 e conhecido como C99. Em 2011 foi publicado o
+                    padrão mais recente, chamado C11.
+                </p>
+                <p class="mt-6 leading-8">
+                    Apesar de sua idade, C continua sendo uma das linguagens
+                    mais utilizadas. A linguagem C inspirou a criação de muitas
+                    outras linguagens de programação mais recentes, como C++,
+                    Java, C#, JavaScript, Perl, PHP, Lua, etc.
+                </p>
+
+                <hr class="my-10 border-t border-gray-300" />
+
+                <div class="mt-10 w-full">
+                    <p>
+                        <span
+                            class="text-base font-semibold leading-7 text-indigo-600"
+                        >
+                            Características da Linguagem
+                        </span>
+                    </p>
+                    <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+                        <div
+                            class="flex gap-x-3 bg-gray-100 p-4 rounded-lg shadow-sm"
+                        >
+                            <CheckCircleIcon
+                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
+                                aria-hidden="true"
+                            />
+                            <span>
+                                <strong class="font-semibold text-gray-900"
+                                    >Procedural, modular e estruturada:</strong
+                                >
+                                Linguagem com tipagem estática de dados.
+                            </span>
+                        </div>
+                        <div
+                            class="flex gap-x-3 bg-gray-100 p-4 rounded-lg shadow-sm"
+                        >
+                            <CheckCircleIcon
+                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
+                                aria-hidden="true"
+                            />
+                            <span>
+                                <strong class="font-semibold text-gray-900"
+                                    >Compilada:</strong
+                                >
+                                Geralmente é compilada para o código de máquina
+                                da plataforma alvo.
+                            </span>
+                        </div>
+                        <div
+                            class="flex gap-x-3 bg-gray-100 p-4 rounded-lg shadow-sm"
+                        >
+                            <CheckCircleIcon
+                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
+                                aria-hidden="true"
+                            />
+                            <span>
+                                <strong class="font-semibold text-gray-900"
+                                    >Eficiente:</strong
+                                >
+                                Gera código compacto, eficiente e sem
+                                necessidade de um subsistema runtime de execução
+                                sofisticado.
+                            </span>
+                        </div>
+                        <div
+                            class="flex gap-x-3 bg-gray-100 p-4 rounded-lg shadow-sm"
+                        >
+                            <CheckCircleIcon
+                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
+                                aria-hidden="true"
+                            />
+                            <span>
+                                <strong class="font-semibold text-gray-900"
+                                    >Acesso de baixo nível:</strong
+                                >
+                                Facilidades para acesso à memória, registradores
+                                e portas de E/S.
+                            </span>
+                        </div>
+                        <div
+                            class="flex gap-x-3 bg-gray-100 p-4 rounded-lg shadow-sm"
+                        >
+                            <CheckCircleIcon
+                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
+                                aria-hidden="true"
+                            />
+                            <span>
+                                <strong class="font-semibold text-gray-900"
+                                    >Portabilidade:</strong
+                                >
+                                Pode executar em plataformas de
+                                microcontroladores a supercomputadores.
+                            </span>
+                        </div>
+                        <div
+                            class="flex gap-x-3 bg-gray-100 p-4 rounded-lg shadow-sm"
+                        >
+                            <CheckCircleIcon
+                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
+                                aria-hidden="true"
+                            />
+                            <span>
+                                <strong class="font-semibold text-gray-900"
+                                    >Aplicações variadas:</strong
+                                >
+                                Utilizada para escrever software de sistema,
+                                como sistemas operacionais, compiladores,
+                                serviços de rede, interfaces gráficas, bancos de
+                                dados, editores de texto, jogos, etc.
+                            </span>
+                        </div>
+                        <div
+                            class="flex gap-x-3 bg-gray-100 p-4 rounded-lg shadow-sm"
+                        >
+                            <CheckCircleIcon
+                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
+                                aria-hidden="true"
+                            />
+                            <span>
+                                <strong class="font-semibold text-gray-900"
+                                    >Bibliotecas:</strong
+                                >
+                                A maior parte das funcionalidades da linguagem
+                                provém de vastas bibliotecas, como a biblioteca
+                                padrão C.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-10 border-t border-gray-300" />
+
+                <div class="mt-16 w-full">
+                    <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+                        Estrutura de um programa em C
+                    </h2>
+                    <p class="mt-6">
+                        Um programa em C é composto das seguintes partes:
+                    </p>
+                    <ul role="list" class="mt-8 w-full space-y-8 text-gray-600">
+                        <li class="flex gap-x-3">
+                            <CheckCircleIcon
+                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
+                                aria-hidden="true"
+                            />
+                            <span>
+                                <strong class="font-semibold text-gray-900"
+                                    >Comandos do preprocessador:</strong
+                                >
+                                Linhas que iniciam com #, como #include ou
+                                #define. Usados para incluir bibliotecas,
+                                definir macros e realizar substituições antes da
+                                compilação.
+                            </span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <CheckCircleIcon
+                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
+                                aria-hidden="true"
+                            />
+                            <span>
+                                <strong class="font-semibold text-gray-900"
+                                    >Compilação:</strong
+                                >
+                                Processo de traduzir o código fonte em C para
+                                código de máquina que o computador pode
+                                executar. Envolve várias etapas:
+                                preprocessamento, compilação, montagem e
+                                linkedição. O resultado final é um arquivo
+                                executável.
+                            </span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <CheckCircleIcon
+                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
+                                aria-hidden="true"
+                            />
+                            <span>
+                                <strong class="font-semibold text-gray-900"
+                                    >Comentário:</strong
+                                >
+                                Trechos de texto que são ignorados pelo
+                                compilador. Usados para explicar o código.
+                                Sintaxe: /* comentário */ para múltiplas linhas
+                                ou // comentário para uma única linha.
+                            </span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <CheckCircleIcon
+                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
+                                aria-hidden="true"
+                            />
+                            <span>
+                                <strong class="font-semibold text-gray-900"
+                                    >Definição de variáveis e tipos:</strong
+                                >
+                                Declaração e inicialização de variáveis. Criação
+                                de novos tipos de dados com typedef ou struct.
+                            </span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <CheckCircleIcon
+                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
+                                aria-hidden="true"
+                            />
+                            <span>
+                                <strong class="font-semibold text-gray-900"
+                                    >Definição de funções:</strong
+                                >
+                                Corpo das funções, contendo a implementação dos
+                                algoritmos e lógicas do programa. Inclui
+                                comandos e expressões que realizam tarefas
+                                específicas.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="my-16">
+                    <section>
+                        <h2 class="text-xl mb-2 font-bold text-gray-900">
+                            Dê seus primeiros passos com C:
+                        </h2>
+                        <iframe
+                            class="w-full aspect-video rounded-xl shadow-lg"
+                            src="https://www.youtube.com/embed/mEPkcSdPigg?si=00-9FMnaf-DEmEpe"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                        ></iframe>
+                    </section>
+                </div>
+
+                <div class="flex w-full justify-center mt-10 gap-4">
+                    <InertiaLink
+                        :href="route('logic')"
+                        class="py-2 px-4 text-white bg-indigo-600 rounded-md hover:bg-indigo-700"
                     >
-                        Proxima Aula
-                    </button>
+                        Voltar
+                    </InertiaLink>
+
+                    <InertiaLink
+                        :href="route('c.library')"
+                        class="py-2 px-4 text-white bg-indigo-600 rounded-md hover:bg-indigo-700"
+                    >
+                        Próxima Aula
+                    </InertiaLink>
                 </div>
             </div>
         </div>

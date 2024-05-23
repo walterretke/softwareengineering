@@ -11,7 +11,7 @@ import Footer from "../Components/Footer.vue";
     <div class="w-full h-screen">
         <SidebarNav />
         <div>
-            <HeroSection title='Introdução a Programação e Robótica' subtitle="Entenda de uma vez por todas os conceitos básicos de C Ansi, Lógica de Programacão, Bibliotecas Básicas, Declaração de váriaves, e Robótica com Arduíno" />
+            <HeroSection menu="true" title='Introdução a Programação e Robótica' subtitle="Entenda de uma vez por todas os conceitos básicos de C Ansi, Lógica de Programacão, Bibliotecas Básicas, Declaração de váriaves, e Robótica com Arduíno" />
         </div>
         <div class="bg-white py-24 sm:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">

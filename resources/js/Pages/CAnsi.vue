@@ -4,8 +4,6 @@ import AppLayout from '@/Layouts/AppLayout.vue';
 import HeroSection from '@/Components/HeroSection.vue';
 import Footer from '@/Components/Footer.vue';
 import { Link as InertiaLink } from '@inertiajs/inertia-vue3'
-import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/vue/24/outline'
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 
 const faqs = [
   {
@@ -28,12 +26,6 @@ const faqs = [
     answer:
         'Aqui você vai aprender sobre estruturas de controle em C Ansi',
     link: "c.library",
-  },
-  {
-    id: 4,
-    question: "Aula 4 - Funções em C",
-    answer: 'Aqui você vai aprender sobre funções em C Ansi',
-    link: 'c.variable',
   }
 ];
 </script>
@@ -50,47 +42,30 @@ const faqs = [
                         Aprenda C Ansi!
                     </h2>
                     <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
-                        <Disclosure
-                            as="div"
+                        <div
                             v-for="(faq) in faqs"
                             :key="faq.id"
                             class="pt-6 max-h-content"
-                            v-slot="{ open }"
                         >
                             <dt>
-                                <DisclosureButton
-                                    class="flex w-full items-start justify-between text-left text-gray-900"
+                                <span
+                                    class="text-base font-semibold leading-7"
+                                    >{{ faq.question }}</span
                                 >
-                                    <span
-                                        class="text-base font-semibold leading-7"
-                                        >{{ faq.question }}</span
-                                    >
-                                    <span class="ml-6 flex items-center">
-                                        <PlusSmallIcon
-                                            v-if="!open"
-                                            class="h-6 w-6"
-                                            aria-hidden="true"
-                                        />
-                                        <MinusSmallIcon
-                                            v-else
-                                            class="h-6 w-6"
-                                            aria-hidden="true"
-                                        />
-                                    </span>
-                                </DisclosureButton>
                             </dt>
-                            <DisclosurePanel as="dd" class="mt-2 pr-12">
+                            <dd class="mt-2 pr-12">
                                 <p class="text-base leading-7 text-gray-600">
                                     {{ faq.answer }}
                                 </p>
                                 <div class="mt-4">
                                     <InertiaLink :href="route(faq.link)" class="text-gray-800 underline">Ver aula</InertiaLink> 
                                 </div>
-                            </DisclosurePanel>
-                        </Disclosure>
+                            </dd>
+                        </div>
                     </dl>
                 </div>
             </div>
         </div>
     </AppLayout>
 </template>
+    

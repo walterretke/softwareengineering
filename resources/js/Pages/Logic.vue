@@ -6,132 +6,91 @@ import {
     CheckCircleIcon,
     InformationCircleIcon,
 } from "@heroicons/vue/20/solid";
+import { Link as InertiaLink } from "@inertiajs/inertia-vue3";
 </script>
 
 <template>
     <AppLayout>
         <HeroSection
-            title="C Ansi"
-            subtitle="Aprenda tudo com o melhor, Walter"
+            title="Lógica de Programação"
+            subtitle="A lógica de programação é a base para a criação de algoritmos e soluções eficientes em qualquer linguagem de programação. Compreender os princípios fundamentais, como estruturas condicionais, loops e variáveis, é essencial para desenvolver programas funcionais e resolver problemas complexos. Mas você sabe qual é o segredo para otimizar ainda mais seu código?"
         />
-        <div class="bg-white px-6 py-32 lg:px-8 w-[1000px] m-auto">
+        <div class="bg-white px-6 py-12 lg:px-8 max-w-full mx-auto">
             <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
                 <p class="text-base font-semibold leading-7 text-indigo-600">
                     C Ansi
                 </p>
-                <h1
-                    class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
-                >
+                <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                     Lógica de Programação
                 </h1>
+                <h2 class="mt-5 bold text-lg">O que é?</h2>
                 <p class="mt-6 text-xl leading-8">
-                    A lógica de programação é um conjunto de princípios e
-                    técnicas fundamentais que permitem a construção de
-                    algoritmos eficientes para resolver problemas e executar
-                    tarefas em computadores. Envolve o entendimento e aplicação
-                    de estruturas condicionais, loops, e variáveis para
-                    controlar o fluxo de um programa. A lógica de programação é
-                    essencial para a criação de software, pois facilita a
-                    organização e otimização do código.
+                    É a habilidade essencial de desenvolver algoritmos eficazes e estruturar soluções lógicas para problemas complexos. Ela é a base fundamental para a criação de software e a instrução de computadores para executar tarefas específicas. Em termos simples, a lógica de programação é a capacidade de organizar e transmitir instruções de maneira coerente e sequencial, de modo que um computador possa executar as ações desejadas.
                 </p>
-                <div class="mt-10 max-w-2xl">
+                <div class="mt-10 max-w-full">
                     <p>
-                        A lógica de programação é composta por elementos
-                        fundamentais como operadores lógicos e aritméticos, que
-                        permitem a manipulação de dados e a tomada de decisões
-                        dentro de um programa. Estruturas condicionais, como
-                        "if", "else if" e "else", são utilizadas para executar
-                        blocos de código com base em condições específicas. Os
-                        loops, como "for", "while" e "do while", são usados para
-                        repetir a execução de um bloco de código enquanto uma
-                        condição for verdadeira, facilitando tarefas
-                        repetitivas. As variáveis são contêineres que armazenam
-                        dados temporários para serem utilizados e manipulados ao
-                        longo da execução do programa. Além disso, funções e
-                        procedimentos são componentes que ajudam a modularizar e
-                        organizar o código, tornando-o mais legível e
-                        reutilizável. Compreender e aplicar esses conceitos
-                        permite criar programas eficientes e resolver problemas
-                        de maneira sistemática e lógica.
+                        <span class="text-base font-semibold leading-7 text-indigo-600">
+                            Importância
+                        </span>
                     </p>
-                    <ul
-                        role="list"
-                        class="mt-8 max-w-xl space-y-8 text-gray-600"
-                    >
+                    <ul role="list" class="mt-8 space-y-8 text-gray-600">
                         <li class="flex gap-x-3">
-                            <CheckCircleIcon
-                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
-                                aria-hidden="true"
-                            />
-                            <span
-                                ><strong class="font-semibold text-gray-900"
-                                    >Data types.</strong
-                                >
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Maiores impedit perferendis
-                                suscipit eaque, iste dolor cupiditate blanditiis
-                                ratione.</span
-                            >
+                            <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                            <span>
+                                <strong class="font-semibold text-gray-900">Resolução de Problemas:</strong> permite que você analise um problema complexo, divida-o em partes menores e crie um plano sistemático para resolvê-lo. Isso ajuda a abordar desafios de maneira organizada e eficiente.
+                            </span>
                         </li>
                         <li class="flex gap-x-3">
-                            <CheckCircleIcon
-                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
-                                aria-hidden="true"
-                            />
-                            <span
-                                ><strong class="font-semibold text-gray-900"
-                                    >Loops.</strong
-                                >
-                                Anim aute id magna aliqua ad ad non deserunt
-                                sunt. Qui irure qui lorem cupidatat
-                                commodo.</span
-                            >
+                            <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                            <span>
+                                <strong class="font-semibold text-gray-900">Eficiência no Código:</strong> Uma lógica bem estruturada resulta em algoritmos mais eficientes e código mais limpo. Isso significa que seus programas serão executados mais rapidamente e serão mais fáceis de entender e manter.
+                            </span>
                         </li>
                         <li class="flex gap-x-3">
-                            <CheckCircleIcon
-                                class="mt-1 h-5 w-5 flex-none text-indigo-600"
-                                aria-hidden="true"
-                            />
-                            <span
-                                ><strong class="font-semibold text-gray-900"
-                                    >Events.</strong
-                                >
-                                Ac tincidunt sapien vehicula erat auctor
-                                pellentesque rhoncus. Et magna sit morbi
-                                lobortis.</span
-                            >
+                            <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                            <span>
+                                <strong class="font-semibold text-gray-900">Prevenção de Erros:</strong> A aplicação adequada da lógica ajuda a identificar e corrigir erros de programação antes que eles se tornem problemas sérios. Uma abordagem lógica ajuda a antecipar cenários problemáticos e a construir salvaguardas no código.
+                            </span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                            <span>
+                                <strong class="font-semibold text-gray-900">Adaptação a Novas Linguagens:</strong> Isso é especialmente útil à medida que a tecnologia evolui e novas linguagens surgem.
+                            </span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                            <span>
+                                <strong class="font-semibold text-gray-900">Criatividade na Solução de Problemas:</strong> A lógica de programação estimula a criatividade, pois você deve pensar de maneira inovadora para criar soluções únicas para os desafios que enfrenta.
+                            </span>
                         </li>
                     </ul>
-                    <p class="mt-8">
-                        Et vitae blandit facilisi magna lacus commodo. Vitae
-                        sapien duis odio id et. Id blandit molestie auctor
-                        fermentum dignissim. Lacus diam tincidunt ac cursus in
-                        vel. Mauris varius vulputate et ultrices hac adipiscing
-                        egestas. Iaculis convallis ac tempor et ut. Ac lorem vel
-                        integer orci.
-                    </p>
-                    <h2
-                        class="mt-16 text-2xl font-bold tracking-tight text-gray-900"
-                    >
-                        From beginner to expert in 3 hours
+                    <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
+                        Se não aprender PROGRAMAÇÃO com esse vídeo. - ̗̀ DESISTE ̖́-
+                    </h2>
+                    <div class="my-16">
+                        <section>
+                            <iframe
+                                class="rounded-xl shadow-lg w-full h-60 md:h-96"
+                                src="https://www.youtube.com/embed/A1BaZr82XJI?si=hFfbiN6sGrEH_sPd"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </section>
+                    </div>
+                    <h2 class="mt-5 bold text-lg">
+                        <strong>"Não consigo entender nada 😨". Calma, é normal..</strong>
                     </h2>
                     <p class="mt-6">
-                        Id orci tellus laoreet id ac. Dolor, aenean leo, ac
-                        etiam consequat in. Convallis arcu ipsum urna nibh.
-                        Pharetra, euismod vitae interdum mauris enim, consequat
-                        vulputate nibh. Maecenas pellentesque id sed tellus
-                        mauris, ultrices mauris. Tincidunt enim cursus ridiculus
-                        mi. Pellentesque nam sed nullam sed diam turpis ipsum eu
-                        a sed convallis diam.
+                        Aprender lógica de programação pode ser um desafio, mas é um passo essencial para se tornar um programador eficaz. Caso você tenha dificuldades, não se preocupe, é normal. A lógica de programação é uma habilidade que pode ser desenvolvida com prática e paciência. Aqui estão algumas dicas para ajudá-lo a entender melhor:
                     </p>
                     <figure class="mt-10 border-l border-indigo-600 pl-9">
                         <blockquote class="font-semibold text-gray-900">
                             <p>
-                                “Vel ultricies morbi odio facilisi ultrices
-                                accumsan donec lacus purus. Lectus nibh
-                                ullamcorper ac dictum justo in euismod. Risus
-                                aenean ut elit massa. In amet aliquet eget cras.
-                                Sem volutpat enim tristique.”
+                                "Todo mundo no país deveria aprender a programar um computador, porque isso ensina você a pensar."
                             </p>
                         </blockquote>
                         <figcaption class="mt-6 flex gap-x-4">
@@ -141,62 +100,58 @@ import {
                                 alt=""
                             />
                             <div class="text-sm leading-6">
-                                <strong class="font-semibold text-gray-900"
-                                    >Maria Hill</strong
-                                >
-                                – Marketing Manager
+                                <strong class="font-semibold text-gray-900">Steve Jobs</strong> – Cofundador da Apple.
                             </div>
                         </figcaption>
                     </figure>
-                    <p class="mt-10">
-                        Faucibus commodo massa rhoncus, volutpat. Dignissim sed
-                        eget risus enim. Mattis mauris semper sed amet vitae sed
-                        turpis id. Id dolor praesent donec est. Odio penatibus
-                        risus viverra tellus varius sit neque erat velit.
-                    </p>
                 </div>
-                <figure class="mt-16">
-                    <img
-                        class="aspect-video rounded-xl bg-gray-50 object-cover"
-                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
-                        alt=""
-                    />
-                    <figcaption
-                        class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500"
-                    >
-                        <InformationCircleIcon
-                            class="mt-0.5 h-5 w-5 flex-none text-gray-300"
-                            aria-hidden="true"
-                        />
-                        Faucibus commodo massa rhoncus, volutpat.
-                    </figcaption>
-                </figure>
-                <div class="mt-16 max-w-2xl">
+                <div class="mt-16 max-w-full">
                     <h2 class="text-2xl font-bold tracking-tight text-gray-900">
-                        Everything you need to get up and running
+                        Vamos praticar um pouco de <strong>lógica de programação</strong>?
                     </h2>
                     <p class="mt-6">
-                        Purus morbi dignissim senectus mattis adipiscing. Amet,
-                        massa quam varius orci dapibus volutpat cras. In amet eu
-                        ridiculus leo sodales cursus tristique. Tincidunt sed
-                        tempus ut viverra ridiculus non molestie. Gravida quis
-                        fringilla amet eget dui tempor dignissim. Facilisis
-                        auctor venenatis varius nunc, congue erat ac. Cras
-                        fermentum convallis quam.
+                        A melhor maneira de aprender lógica de programação é praticando. E a prática não precisa ser chata, pode ser bem divertida. Vamos praticar com alguns jogos e desafios de lógica de programação?
                     </p>
-                    <p class="mt-8">
-                        Faucibus commodo massa rhoncus, volutpat. Dignissim sed
-                        eget risus enim. Mattis mauris semper sed amet vitae sed
-                        turpis id. Id dolor praesent donec est. Odio penatibus
-                        risus viverra tellus varius sit neque erat velit.
-                    </p>
+                    <div class="mt-10 flex flex-col gap-8">
+                        <span class="block">
+                            <strong class="mt-16 font-semibold text-gray-900">O Lobo e a Ovelha</strong>
+                            <a
+                                class="ml-2 text-blue-700 underline italic"
+                                target="_blank"
+                                href="https://rachacuca.com.br/jogos/o-lobo-e-a-ovelha/"
+                            >
+                                Clique aqui e jogue!
+                            </a>
+                            <img
+                                class="rounded-lg shadow-lg mt-5 w-full h-auto"
+                                src="../../../public/images/ovelha.png"
+                                alt=""
+                            />
+                        </span>
+                        <span class="block">
+                            <strong class="mt-16 font-semibold text-gray-900">Missionários e Canibais</strong>
+                            <a
+                                class="ml-2 text-blue-700 underline italic"
+                                target="_blank"
+                                href="http://rachacuca.com.br/jogos/missionarios-ecanibais/"
+                            >
+                                Clique aqui e jogue!
+                            </a>
+                            <img
+                                class="rounded-lg shadow-lg mt-5 w-full h-auto"
+                                src="../../../public/images/missionarios.jpg"
+                                alt=""
+                            />
+                        </span>
+                    </div>
                 </div>
-                <div class="flex w-full justify-end mt-10">
-                    <button
-                        class="py-2 px-4 bg-gray-800 text-white rounded-md hover:bg-gray-900 hover"
+                <div class="flex w-full justify-center mt-10">
+                    <Inertia-link
+                        :href="route('c.language')"
+                        class="py-2 px-4 text-white bg-indigo-600 rounded-md hover:bg-indigo-700"
                     >
-                        Proxima Aula
-                    </button>
+                        Próxima Aula
+                    </Inertia-link>
                 </div>
             </div>
         </div>
